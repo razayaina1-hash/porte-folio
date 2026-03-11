@@ -1,0 +1,150 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#000;
+padding:40px;
+}
+
+/* container */
+
+.container{
+max-width:850px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* header */
+
+header{
+text-align:center;
+margin-bottom:35px;
+}
+
+.profile-img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+margin:auto;
+display:block;
+border:5px solid #667eea;
+}
+
+h1{
+margin-top:15px;
+font-weight:600;
+}
+
+.job{
+color:#777;
+margin-bottom:15px;
+}
+
+.info p{
+font-size:14px;
+color:#555;
+margin:3px;
+}
+
+/* sections */
+
+section{
+margin-top:30px;
+}
+
+h2{
+margin-bottom:15px;
+color:#444;
+border-left:5px solid #667eea;
+padding-left:10px;
+}
+
+/* cards */
+
+.card{
+background:#f6f7fb;
+padding:15px;
+border-radius:10px;
+margin-bottom:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+box-shadow:0 8px 18px rgba(0,0,0,0.1);
+}
+
+.card span{
+font-size:13px;
+color:#777;
+}
+
+/* skills */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+list-style:none;
+}
+
+.skills li{
+background:#667eea;
+color:white;
+padding:8px 14px;
+border-radius:20px;
+font-size:14px;
+}
+
+/* hobbies */
+
+.hobbies{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:15px;
+margin-top:10px;
+}
+
+.hobby{
+background:#f4f5ff;
+border-radius:12px;
+padding:20px;
+text-align:center;
+font-size:25px;
+transition:0.3s;
+}
+
+.hobby p{
+font-size:14px;
+margin-top:8px;
+color:#444;
+}
+
+.hobby:hover{
+background:#667eea;
+color:white;
+transform:scale(1.05);
+}
+
+/* responsive */
+
+@media(max-width:600px){
+
+.container{
+padding:25px;
+}
+
+.profile-img{
+width:120px;
+height:120px;
+}
+
+}
